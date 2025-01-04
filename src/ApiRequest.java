@@ -11,7 +11,7 @@ public class ApiRequest {
     private static final String API_KEY = "9076839138c9a28024478fc5";
     private static final String API_URL = "https://v6.exchangerate-api.com/v6/";
 
-    public Currency pairConversion (String baseCode, String targetCode, String amountToConvert) {
+    public Currency pairConversion (String baseCode, String targetCode, Float amountToConvert) {
         String address = API_URL + API_KEY + "/pair/" + baseCode + "/" + targetCode + "/" + amountToConvert;
 
         var formattedAddress = getValidURL(address);
